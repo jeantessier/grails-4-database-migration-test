@@ -71,12 +71,14 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-support:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.14.0"
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.14.0"
+
+    runtime "mysql:mysql-connector-java:5.1.48"
 }
 
 bootRun {
     jvmArgs(
-        '-Dspring.output.ansi.enabled=always', 
-        '-noverify', 
+        '-Dspring.output.ansi.enabled=always',
+        '-noverify',
         '-XX:TieredStopAtLevel=1',
         '-Xmx1024m')
     sourceResources sourceSets.main
