@@ -11,7 +11,7 @@ This is to test the `database-migration` plugin with Grails 4.0.0 and MySQL.
 
 ### Create Or Update the Schema
 
-    $ ./gradlew dbm-update
+    $ ./gradlew dbmUpdate
 
 ## To Run
 
